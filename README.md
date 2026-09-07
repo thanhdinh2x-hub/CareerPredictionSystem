@@ -4,8 +4,6 @@ An AI-powered web application that predicts the career level of a job posting ba
 
 ## Live Demo
 
-## Live Demo
-
 Web Application:  
 https://career-prediction-web.vercel.app
 
