@@ -5,7 +5,7 @@ An AI-powered web application that predicts the career level of a job posting ba
 ## Live Demo
 
 Web Application:  
-https://career-prediction-web.vercel.app
+[Career Prediction System - Live Demo](https://career-prediction-web.vercel.app)
 
 FastAPI Backend:  
 https://ml-service-omega.vercel.app
