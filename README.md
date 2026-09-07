@@ -11,7 +11,32 @@ Try the application online:
 ## Preview
 
 ![Career Prediction System](web_app/public/demo.png)
+## Dataset
 
+This project was developed using a real-world company dataset containing job posting information.
+
+The dataset was used as the primary source for training and evaluating the career-level prediction model. It contains structured and unstructured job-related features, allowing the project to demonstrate how real-world data can be prepared and transformed into machine-learning features.
+
+The main fields used in the project include:
+
+```text
+title
+location
+description
+function
+industry
+career_level
+```
+
+The dataset combines both textual and categorical information. Text fields require feature extraction before they can be used by the machine learning model, while categorical fields require appropriate encoding.
+
+### Real Dataset Preview
+
+The following image shows a sample of the actual dataset structure used during development:
+
+![Real-World Dataset](web_app/public/real-world-dataset.png)
+
+The original dataset is not fully published in this repository because it contains company data. The preview is provided to demonstrate the structure and characteristics of the real-world data used in the project.
 ## How It Works
 
 The system consists of three main components:
