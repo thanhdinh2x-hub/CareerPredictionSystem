@@ -1,0 +1,195 @@
+doctype html
+
+html
+
+    head
+
+        title Career Prediction AI
+
+        link(
+            rel="stylesheet"
+            href="/style.css"
+        )
+
+
+    body
+
+
+        div.container
+
+
+            div.logo-container
+
+                img.logo(
+                    src="/logo.png"
+                    alt="Career Prediction AI"
+                )
+
+
+            h1.title
+                Career Level Prediction AI
+
+
+            p.subtitle
+                Predict career level using Machine Learning
+
+
+
+            form(
+                action="/predict"
+                method="POST"
+            )
+
+
+                div.form-group
+
+                    label Job Title
+
+                    input(
+                        name="title"
+                        placeholder="Software Engineer"
+                        required
+                    )
+
+
+
+                div.form-group
+
+                    label Location
+
+                    input(
+                        list="locationOptions"
+                        name="location"
+                        placeholder="Germany"
+                        required
+                    )
+
+
+                    datalist#locationOptions
+
+                        option(
+                            value="Germany"
+                        )
+
+                        option(
+                            value="USA"
+                        )
+
+                        option(
+                            value="UK"
+                        )
+
+                        option(
+                            value="France"
+                        )
+
+
+
+                div.form-group
+
+                    label Function
+
+                    input(
+                        list="functionOptions"
+                        name="function"
+                        placeholder="Choose or type function"
+                        required
+                    )
+
+
+                    datalist#functionOptions
+
+                        option(
+                            value="information_technology_telecommunications"
+                        )
+
+                        option(
+                            value="finance_accounting"
+                        )
+
+                        option(
+                            value="marketing"
+                        )
+
+                        option(
+                            value="sales"
+                        )
+
+                        option(
+                            value="human_resources"
+                        )
+
+                        option(
+                            value="management"
+                        )
+
+                        option(
+                            value="research_development"
+                        )
+
+
+
+                div.form-group
+
+                    label Industry
+
+                    input(
+                        list="industryOptions"
+                        name="industry"
+                        placeholder="Choose or type industry"
+                        required
+                    )
+
+
+                    datalist#industryOptions
+
+                        option(
+                            value="software"
+                        )
+
+                        option(
+                            value="information_technology"
+                        )
+
+                        option(
+                            value="consulting"
+                        )
+
+                        option(
+                            value="finance"
+                        )
+
+                        option(
+                            value="healthcare"
+                        )
+
+
+
+                div.form-group
+
+                    label Job Description
+
+
+                    textarea(
+                        name="description"
+                        rows="6"
+                        placeholder="Describe the job..."
+                        required
+                    )
+
+
+
+                button(
+                    type="submit"
+                )
+                    Predict Career Level
+
+
+
+            if result
+
+                div.result
+
+                    h2 Prediction Result
+
+                    h3 #{result}
