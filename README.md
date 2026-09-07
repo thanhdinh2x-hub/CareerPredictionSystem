@@ -6,7 +6,7 @@ An AI-powered web application that predicts the career level of a job posting ba
 
 Try the application online:
 
-[Career Prediction System - Live Demo]([YOUR_DEMO_URL](https://career-prediction-web.vercel.app/))
+[Career Prediction System - Live Demo]((https://career-prediction-web.vercel.app/))
 
 ## Preview
 
